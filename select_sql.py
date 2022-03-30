@@ -2,7 +2,7 @@
 import sqlalchemy
 
 
-engine = sqlalchemy.create_engine('postgresql://.........')
+engine = sqlalchemy.create_engine('postgresql://.........') # Заполнить свои данные
 connection = engine.connect()  
 
 year = 2018
