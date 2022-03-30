@@ -1,7 +1,6 @@
 
 import sqlalchemy
 
-
 engine = sqlalchemy.create_engine('postgresql://.........') # Заполнить свои данные
 connection = engine.connect()  
 
@@ -23,7 +22,6 @@ LIMIT 1;
 """).fetchall()
 print(f'Самый длительный трек с продолжительностью {max_duration[0][1]} минуты называется "{max_duration[0][0]}"')
 print()
-
 
 duration = connection.execute(f"""
 SELECT name, duration FROM Tracks
