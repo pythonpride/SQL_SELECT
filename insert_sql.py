@@ -18,7 +18,7 @@ try:
             for item in  reader:            
                 index = 1            
                 data = item[list(item.keys())[0]].split(";")                
-                engine = sqlalchemy.create_engine('postgresql://............')
+                engine = sqlalchemy.create_engine('postgresql://............') # Заполнить свои данные
                 connection = engine.connect()            
                 if name == "Genre":                                              
                     dict["Genre"]= f"DEFAULT, '{data[index]}'"
